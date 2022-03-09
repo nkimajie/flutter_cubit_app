@@ -4,6 +4,7 @@ import 'package:flutter_cubit/cubit/app_cubit_state.dart';
 import 'package:flutter_cubit/cubit/app_cubits.dart';
 import 'package:flutter_cubit/pages/details_page.dart';
 import 'package:flutter_cubit/pages/home_page.dart';
+import 'package:flutter_cubit/pages/navpages/main_page.dart';
 import 'package:flutter_cubit/pages/welcome_page.dart';
 
 class AppCubitLogics extends StatefulWidget {
@@ -26,7 +27,7 @@ class _AppCubitLogicsState extends State<AppCubitLogics> {
               child: CircularProgressIndicator(),
             );
           }if (state is LoadedState) {
-            return HomePage();
+            return MainPage();
           }if (state is DetailState) {
             return DetailPage();
           }else{
