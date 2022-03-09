@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_cubit/cubit/app_cubit_state.dart';
 import 'package:flutter_cubit/cubit/app_cubits.dart';
+import 'package:flutter_cubit/pages/details_page.dart';
 import 'package:flutter_cubit/pages/home_page.dart';
 import 'package:flutter_cubit/pages/welcome_page.dart';
 
@@ -26,6 +27,8 @@ class _AppCubitLogicsState extends State<AppCubitLogics> {
             );
           }if (state is LoadedState) {
             return HomePage();
+          }if (state is DetailState) {
+            return DetailPage();
           }else{
             return Container();
           }
