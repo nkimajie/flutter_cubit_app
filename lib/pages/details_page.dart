@@ -186,7 +186,7 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                     AppText(
                       text:
-                          "Yosemite national park is located in central sierra Naveda in the US state of califonia, it is located near the wild protected area.",
+                        "Yosemite national park is located in central sierra Naveda in the US state of califonia, it is located near the wild protected area.",
                       color: AppColors.mainTextColor,
                     ),
                   ],
